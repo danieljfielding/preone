@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PreOne — Australian Polymers Thoughtfully Made</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
@@ -10,241 +9,135 @@
 <body>
 <div id="nav-placeholder"></div>
 <div class="page-dots">
-  <button class="page-dot" title="Home"></button>
-  <button class="page-dot" title="The Problem"></button>
-  <button class="page-dot" title="Technology"></button>
-  <button class="page-dot" title="Who We Serve"></button>
-  <button class="page-dot" title="Facilities"></button>
+  <button class="page-dot"></button><button class="page-dot"></button>
+  <button class="page-dot"></button><button class="page-dot"></button>
+  <button class="page-dot"></button>
 </div>
 
-<!-- HERO — tiffany photo overlay, pellets background -->
+<!-- HERO — VIDEO with teal overlay -->
 <section class="hero" id="hero">
-  <!-- VIDEO HERO BACKGROUND -->
-  <div class="hero-video-wrap">
+  <div class="hero-media">
     <video autoplay muted loop playsinline class="hero-video">
       <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
-    <div class="hero-video-overlay"></div>
+    <!-- Fallback image if video fails -->
+    <div class="hero-img" style="background-image:url('assets/photo-pellets.jpg');"></div>
+    <div class="hero-overlay"></div>
   </div>
   <div class="hero-inner">
-    <div>
+    <div style="max-width:700px;">
       <div class="hero-eyebrow">Advanced Mechanical Recycling · Australia</div>
       <h1 class="hero-h1">Australian polymers<br>thoughtfully made</h1>
-      <p class="hero-sub">PreOne bridges the world of waste to the world of polymers — delivering food-grade recycled resin for packaging manufacturers and brand owners across Australia.</p>
+      <p class="hero-sub">PreOne bridges the world of waste to the world of polymers — manufacturing sustainable recycled polymers for packaging manufacturers and brand owners across Australia.</p>
       <div class="hero-actions">
-        <a href="solution.html" class="btn-white">See How It Works</a>
-        <a href="who-we-serve.html" class="btn-ghost-white">Who We Serve →</a>
+        <a href="packaging-solutions.html" class="btn-white">Take a Closer Look</a>
+        <a href="feedstock.html" class="btn-ghost-white">Got Plastic?</a>
       </div>
-    </div>
-    <div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-val">90m²</div>
-          <div class="hero-stat-lbl">Per Second</div>
-          <div class="hero-stat-sub">Purification throughput</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-val">100ppm</div>
-          <div class="hero-stat-lbl">Purity</div>
-          <div class="hero-stat-sub">Residual contamination</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-val">$80M</div>
-          <div class="hero-stat-lbl">SA Investment</div>
-          <div class="hero-stat-sub">Adelaide hub under construction</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-val">40kt</div>
-          <div class="hero-stat-lbl">Annual Output</div>
-          <div class="hero-stat-sub">Recycled polymer resins</div>
-        </div>
-      </div>
+      <p class="hero-cta-text">In Australia call <strong style="color:var(--white);">1800 PREONE</strong></p>
     </div>
   </div>
 </section>
 
 <!-- PARTNER STRIP -->
 <div class="partner-strip">
-  <div class="partner-strip-inner">
-    <p class="partner-strip-label">Working Across the Entire Supply Chain</p>
+  <div class="partner-inner">
+    <p class="partner-label">Trusted Across the Supply Chain</p>
     <div class="partner-items">
-      <span class="partner-item">Re.Group</span>
-      <div class="partner-divider"></div>
-      <span class="partner-item">Chobani</span>
-      <div class="partner-divider"></div>
-      <span class="partner-item">MPAK</span>
-      <div class="partner-divider"></div>
-      <span class="partner-item">Brand Owners</span>
-      <div class="partner-divider"></div>
-      <span class="partner-item">MRF Operators</span>
-      <div class="partner-divider"></div>
+      <span class="partner-item">Re.Group</span><div class="partner-div"></div>
+      <span class="partner-item">Chobani</span><div class="partner-div"></div>
+      <span class="partner-item">MPAK</span><div class="partner-div"></div>
+      <span class="partner-item">Brand Owners</span><div class="partner-div"></div>
+      <span class="partner-item">MRF Operators</span><div class="partner-div"></div>
       <span class="partner-item">Converters</span>
     </div>
   </div>
 </div>
 
-<!-- THE PROBLEM TEASER -->
-<section class="bg-white" id="problem">
-  <div class="container">
-    <div class="two-col-grid-center">
-      <div>
-        <div class="section-eyebrow reveal">The Problem We Solve</div>
-        <h2 class="section-h2 reveal reveal-d1">91% of plastic<br>is never recycled</h2>
-        <p class="section-sub reveal reveal-d2" style="margin-bottom:32px;">Plastics pollution is one of the biggest environmental threats facing the world. The world of waste and the world of polymers operate in silos — PreOne bridges them through world-leading advanced mechanical recycling technology.</p>
-        <a href="solution.html" class="btn-primary reveal reveal-d3">See the Full Picture</a>
+<!-- PACKAGING SOLUTIONS TEASER — Slide 2 content -->
+<section id="packaging" style="padding:0;">
+  <div class="feature-split">
+    <div class="feature-split-photo">
+      <img src="assets/photo-pellets.jpg" alt="PreOne polymer pellets">
+    </div>
+    <div class="feature-split-text" style="padding:72px 56px;">
+      <div class="eyebrow reveal">Packaging Solutions</div>
+      <h2 class="h2 reveal reveal-d1">Give grey the<br>day off</h2>
+      <p class="body-text reveal reveal-d2" style="margin-bottom:28px;">With PreOne™ Packaging Solutions, brand owners don't have to choose between performance and beauty. Our polymers are engineered to handle the toughest applications while elevating your brand — proof that responsibility requires no compromise.</p>
+      <a href="packaging-solutions.html" class="btn-primary reveal reveal-d3">Create Your Perfect Packaging</a>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABLE POLYMERS TEASER — Slide 3 content -->
+<section id="polymers" style="padding:0;">
+  <div class="feature-split">
+    <div class="feature-split-text" style="padding:72px 56px;background:var(--bg);">
+      <div class="eyebrow reveal">Sustainable Polymers</div>
+      <h2 class="h2 reveal reveal-d1">Packaging<br>with integrity</h2>
+      <p class="body-text reveal reveal-d2" style="margin-bottom:16px;">Durability without compromise. Every PreOne™ Sustainable Polymer is thoughtfully designed by our team of polymer chemists to meet the demands and aesthetics of your specific application.</p>
+      <div style="display:flex;align-items:baseline;gap:10px;margin:20px 0 28px;" class="reveal reveal-d2">
+        <span style="font-size:48px;font-weight:800;color:var(--tiffany);line-height:1;">1000+</span>
+        <span style="font-size:14px;color:var(--mid);">unique polymers<br>and counting</span>
       </div>
-      <div class="stat-grid-2 reveal reveal-d1">
-        <div class="stat-tile">
-          <div class="stat-tile-val">14M</div>
-          <div class="stat-tile-lbl">Tonnes of plastic enter the ocean every year</div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-tile-val">91%</div>
-          <div class="stat-tile-lbl">Of soft plastics buried, burnt or washed away</div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-tile-val">2×</div>
-          <div class="stat-tile-lbl">Global production to double by 2040</div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-tile-val">2.8Bn</div>
-          <div class="stat-tile-lbl">Tonnes of GHG from plastics by 2050</div>
-        </div>
+      <a href="sustainable-polymers.html" class="btn-outline reveal reveal-d3">Shop Polymers</a>
+    </div>
+    <div class="feature-split-photo">
+      <img src="assets/photo-testing.jpg" alt="Polymer testing">
+    </div>
+  </div>
+</section>
+
+<!-- FEEDSTOCK TEASER — Slide 4+5 content -->
+<section id="feedstock" style="padding:0;">
+  <div class="tiffany-photo-section">
+    <div class="tiphoto-bg" style="background-image:url('assets/photo-recycling.jpg');"></div>
+    <div class="tiphoto-overlay"></div>
+    <div class="tiphoto-content">
+      <div class="eyebrow reveal" style="color:rgba(255,255,255,0.8);">Feedstock</div>
+      <h2 class="h2 h2-white reveal reveal-d1" style="max-width:640px;font-size:clamp(32px,4vw,54px);">Trace recyclable<br>plastics to the source</h2>
+      <p style="font-size:17px;color:rgba(255,255,255,0.85);line-height:1.75;max-width:520px;margin:16px 0 32px;" class="reveal reveal-d2">Got plastic? Let's make it fantastic. At PreOne™ we believe in strong partnerships and invite you to join us in supporting the packaging industry with the best sustainable polymers in the world.</p>
+      <div style="display:flex;gap:14px;" class="reveal reveal-d3">
+        <a href="feedstock.html" class="btn-white">See Where Your Plastic Goes</a>
+        <a href="contact.html" class="btn-ghost-white">Feed Us Here</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TECHNOLOGY TEASER -->
-<section class="bg-light" id="technology">
-  <div class="container">
-    <div class="section-eyebrow reveal">Our Technology</div>
-    <h2 class="section-h2 reveal reveal-d1">We Make It Circular</h2>
-    <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:52px;">PreOne coordinates the supply chain end-to-end using the HydroDyn® advanced mechanical recycling system — purifying to 100 parts per million at 90m² per second.</p>
-    <div class="process-strip process-strip-6 reveal">
-      <div class="process-connector"></div>
-      <div class="process-step">
-        <div class="process-num">1</div>
-        <div class="process-step-title">Recovery Spokes</div>
-        <div class="process-step-desc">HydroCleaner converts waste plastic into pre-washed flakes at MRF sites.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">2</div>
-        <div class="process-step-title">Purification Hubs</div>
-        <div class="process-step-desc">JV hubs convert flakes into virgin-replacement ASP resins.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">3</div>
-        <div class="process-step-title">Converters</div>
-        <div class="process-step-desc">Packaging manufacturers receive ASPs tuned to exact specifications.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">4</div>
-        <div class="process-step-title">Brand Owners</div>
-        <div class="process-step-desc">Packaging solutions with equity participation in hub developments.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">5</div>
-        <div class="process-step-title">Retailers</div>
-        <div class="process-step-desc">Certified packaging, traceability and supply priority.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">6</div>
-        <div class="process-step-title">Consumers</div>
-        <div class="process-step-desc">Functional, consistent products. Transparency. Engagement in recovery.</div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:44px;" class="reveal">
-      <a href="technology.html" class="btn-outline">Explore Our Technology</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHO WE SERVE TEASER -->
-<section class="bg-white" id="serve">
-  <div class="container">
-    <div class="section-eyebrow reveal">Who We Serve</div>
-    <h2 class="section-h2 reveal reveal-d1">Value for Every<br>Player in the Chain</h2>
-    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">Our collaborative model creates equitable outcomes for MRFs, packaging manufacturers, brand owners and retailers — not just one player.</p>
-    <div class="card-grid-4 reveal reveal-d1">
-      <a href="who-we-serve.html#mrf" class="light-card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+<!-- FACILITIES TEASER — Slide 6 content -->
+<section id="facilities" style="padding:0;">
+  <div class="tiffany-photo-section">
+    <div class="tiphoto-bg" style="background-image:url('assets/photo-facility.jpg');"></div>
+    <div class="tiphoto-overlay" style="background:rgba(0,161,155,0.82);"></div>
+    <div class="tiphoto-content">
+      <div class="eyebrow reveal" style="color:rgba(255,255,255,0.8);">Our Facilities</div>
+      <h2 class="h2 h2-white reveal reveal-d1" style="font-size:clamp(32px,4vw,58px);">PreOne are building<br>world class recycling<br>infrastructure</h2>
+      <p style="font-size:17px;color:rgba(255,255,255,0.85);line-height:1.75;max-width:540px;margin:16px 0 28px;" class="reveal reveal-d2">A $80m investment in South Australia — the most advanced soft plastics recycling facility in Australia. Partnered with Re.Group, producing 40,000 tonnes of food-grade recycled polymer per year from 2026.</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:580px;margin-bottom:32px;" class="reveal reveal-d2">
+        <div style="background:rgba(255,255,255,0.14);padding:18px 14px;text-align:center;backdrop-filter:blur(4px);">
+          <div style="font-size:24px;font-weight:800;color:var(--white);">$80M</div>
+          <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:3px;">Investment</div>
         </div>
-        <h3>MRF Operators</h3>
-        <p>Add real value at the gate. Certified feedstock. 100% PreOne volume offtake.</p>
-      </a>
-      <a href="who-we-serve.html#manufacturers" class="light-card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M9 20V8l-7 4V8l7-4v4l7-4v16"/></svg>
+        <div style="background:rgba(255,255,255,0.14);padding:18px 14px;text-align:center;backdrop-filter:blur(4px);">
+          <div style="font-size:24px;font-weight:800;color:var(--white);">40kt</div>
+          <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:3px;">Annual Output</div>
         </div>
-        <h3>Packaging Manufacturers</h3>
-        <p>Single-pack ASP solution. No trial and error. Engineered to your exact spec.</p>
-      </a>
-      <a href="who-we-serve.html#brands" class="light-card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        <div style="background:rgba(255,255,255,0.14);padding:18px 14px;text-align:center;backdrop-filter:blur(4px);">
+          <div style="font-size:24px;font-weight:800;color:var(--white);">12k</div>
+          <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:3px;">Square Metres</div>
         </div>
-        <h3>Brand Owners</h3>
-        <p>Hit recycled content targets. Equity participation. Price certainty.</p>
-      </a>
-      <a href="who-we-serve.html#retailers" class="light-card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        </div>
-        <h3>Retailers</h3>
-        <p>Packaging design, traceability, supply priority and community responsibility.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FACILITIES TEASER — photo background -->
-<section class="bg-white" id="facilities" style="padding:0;">
-  <div style="position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center;">
-    <div style="position:absolute;inset:0;background:url('assets/photo-facility.jpg') center/cover no-repeat;"></div>
-    <div style="position:absolute;inset:0;background:rgba(0,161,155,0.78);"></div>
-    <div class="container" style="position:relative;z-index:2;padding-top:80px;padding-bottom:80px;">
-      <div class="section-eyebrow reveal" style="color:rgba(255,255,255,0.8);">Our Facilities</div>
-      <h2 class="section-h2 reveal reveal-d1" style="color:var(--white);">$80M Facility.<br>Adelaide. 2026.</h2>
-      <p style="font-size:16px;color:rgba(255,255,255,0.85);line-height:1.75;max-width:520px;margin-bottom:36px;" class="reveal reveal-d2">The South Australian Purification Hub is now under construction — the most significant investment in Australian soft plastics recycling infrastructure, in partnership with Re.Group.</p>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:640px;margin-bottom:40px;" class="reveal reveal-d2">
-        <div style="background:rgba(255,255,255,0.15);padding:20px 16px;text-align:center;backdrop-filter:blur(4px);">
-          <div style="font-size:26px;font-weight:800;color:var(--white);">$80M</div>
-          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:4px;">Investment</div>
-        </div>
-        <div style="background:rgba(255,255,255,0.15);padding:20px 16px;text-align:center;backdrop-filter:blur(4px);">
-          <div style="font-size:26px;font-weight:800;color:var(--white);">40kt</div>
-          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:4px;">Annual Output</div>
-        </div>
-        <div style="background:rgba(255,255,255,0.15);padding:20px 16px;text-align:center;backdrop-filter:blur(4px);">
-          <div style="font-size:26px;font-weight:800;color:var(--white);">12k</div>
-          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:4px;">Square Metres</div>
-        </div>
-        <div style="background:rgba(255,255,255,0.15);padding:20px 16px;text-align:center;backdrop-filter:blur(4px);">
-          <div style="font-size:26px;font-weight:800;color:var(--white);">2026</div>
-          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:4px;">Production</div>
+        <div style="background:rgba(255,255,255,0.14);padding:18px 14px;text-align:center;backdrop-filter:blur(4px);">
+          <div style="font-size:24px;font-weight:800;color:var(--white);">2026</div>
+          <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.8px;margin-top:3px;">Production</div>
         </div>
       </div>
       <div style="display:flex;gap:14px;" class="reveal reveal-d3">
-        <a href="facilities.html" class="btn-white">Our Facilities &amp; Investment</a>
-        <a href="contact.html" class="btn-ghost-white">Partner With Us</a>
+        <a href="facilities.html" class="btn-white">Our Facilities</a>
+        <a href="facilities.html#investment" class="btn-ghost-white">Invest With Us</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- CTA BAND -->
-<div class="cta-band">
-  <div class="cta-inner">
-    <h2>Ready to Close the Loop?</h2>
-    <p>Whether you're an MRF operator, packaging manufacturer, brand owner or retailer — there's a PreOne partnership model built for you.</p>
-    <div class="cta-actions">
-      <a href="contact.html" class="btn-white">Partner With Us</a>
-      <a href="solution.html" class="btn-ghost-white">Learn More</a>
-    </div>
-  </div>
-</div>
 
 <div id="footer-placeholder"></div>
 <script src="assets/chrome.js"></script>
