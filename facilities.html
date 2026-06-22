@@ -2,108 +2,271 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us — PreOne</title>
+<title>Our Facilities — PreOne</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="nav-placeholder"></div>
+<div class="page-dots">
+  <button class="page-dot"></button><button class="page-dot"></button>
+  <button class="page-dot"></button><button class="page-dot"></button>
+  <button class="page-dot"></button>
+</div>
 
-<!-- HERO — tiffany solid -->
-<div class="page-hero" id="contact" style="background:var(--tiffany);padding-bottom:96px;">
+<!-- HERO — actual facility photo with teal overlay -->
+<div class="page-hero" id="overview">
+  <div class="page-hero-photo" style="background-image:url('assets/photo-facility.jpg');"></div>
   <div class="container page-hero-inner">
-    <div class="page-hero-tag">Contact Us</div>
-    <h1 class="page-h1">Let's Build Something<br>Circular Together</h1>
-    <p class="page-sub">Whether you're an MRF operator, packaging manufacturer, brand owner or investor — PreOne has a partnership model structured for your role in the supply chain.</p>
+    <div class="page-hero-tag">Our Facilities · South Australia · Now Under Construction</div>
+    <h1 class="page-h1">$80M. 40kt.<br>Adelaide. 2026.</h1>
+    <p class="page-sub">Australia's most advanced soft plastics recycling facility — a $80m investment producing 40,000 tonnes of food-grade recycled polymer per year. In partnership with Re.Group, Australia's largest waste management organisation.</p>
+    <div class="page-hero-actions">
+      <a href="contact.html" class="btn-white">Partner With Us</a>
+      <a href="#investment" class="btn-ghost-white">Investment Opportunities →</a>
+    </div>
   </div>
 </div>
 
-<!-- CONTACT SECTION -->
-<section class="bg-white">
+<!-- KEY METRICS — flush under hero -->
+<div style="background:var(--white);border-bottom:1px solid var(--light-grey);">
+  <div class="container" style="padding-top:0;padding-bottom:0;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--light-grey);border-top:3px solid var(--tiffany);">
+      <div style="background:var(--white);padding:32px 28px;">
+        <div style="font-size:40px;font-weight:800;color:var(--tiffany);line-height:1;margin-bottom:6px;">$80<span style="font-size:20px;">M</span></div>
+        <div style="font-size:10px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Total Investment</div>
+        <div style="font-size:12px;color:var(--steel);line-height:1.5;">SA Purification Hub #1 — facility, technology and fit-out</div>
+      </div>
+      <div style="background:var(--white);padding:32px 28px;">
+        <div style="font-size:40px;font-weight:800;color:var(--tiffany);line-height:1;margin-bottom:6px;">40<span style="font-size:20px;">kt</span></div>
+        <div style="font-size:10px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Annual Output</div>
+        <div style="font-size:12px;color:var(--steel);line-height:1.5;">40,000 tonnes of recycled polymer resins per year at capacity</div>
+      </div>
+      <div style="background:var(--white);padding:32px 28px;">
+        <div style="font-size:40px;font-weight:800;color:var(--tiffany);line-height:1;margin-bottom:6px;">12<span style="font-size:20px;">k</span></div>
+        <div style="font-size:10px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Square Metres</div>
+        <div style="font-size:12px;color:var(--steel);line-height:1.5;">New facility on an existing 7-hectare South Australian site</div>
+      </div>
+      <div style="background:var(--white);padding:32px 28px;">
+        <div style="font-size:40px;font-weight:800;color:var(--tiffany);line-height:1;margin-bottom:6px;">2026</div>
+        <div style="font-size:10px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Production Start</div>
+        <div style="font-size:12px;color:var(--steel);line-height:1.5;">Food-grade rPP — partnering opportunities available now</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THE FACILITY -->
+<section class="bg-white" id="facility">
   <div class="container">
-    <div class="contact-grid">
-      <!-- Form -->
+    <div class="two-col-grid-center">
       <div>
-        <div class="section-eyebrow reveal">Get In Touch</div>
-        <h2 class="section-h2 reveal reveal-d1" style="margin-bottom:28px;">Send Us<br>a Message</h2>
-        <form onsubmit="handleSubmit(event)" class="reveal reveal-d2">
-          <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
-          <div class="form-group"><label>Company</label><input type="text" placeholder="Your organisation" required></div>
-          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
-          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+61 ..."></div>
-          <div class="form-group">
-            <label>I Am A</label>
-            <select>
-              <option value="">Select your role...</option>
-              <option>MRF / Waste Management Operator</option>
-              <option>Packaging Manufacturer / Converter</option>
-              <option>Brand Owner</option>
-              <option>Retailer</option>
-              <option>Investor / Capital Partner</option>
-              <option>Media / Research</option>
-              <option>Other</option>
-            </select>
+        <div class="section-eyebrow reveal">The Facility</div>
+        <h2 class="section-h2 reveal reveal-d1">South Australian<br>Purification Hub #1</h2>
+        <p class="section-sub reveal reveal-d2" style="margin-bottom:36px;">A purpose-built 12,000m² recycling facility on an existing 7-hectare site in South Australia — currently under construction and on track for production in 2026.</p>
+        <div class="num-points reveal reveal-d2">
+          <div class="num-point">
+            <div class="num-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="num-point-body"><h3>Construction Underway</h3><p>The 12,000m² facility is actively under construction on the Re.Group 7-hectare South Australian site. Steel framework complete and fit-out progressing on schedule.</p></div>
           </div>
-          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your interest in PreOne — your organisation, plastic volumes, packaging targets, or investment interest..."></textarea></div>
-          <button type="submit" class="btn-primary" style="width:100%;padding:15px;font-size:14px;border-radius:6px;">Send Message</button>
-        </form>
-        <div id="form-success" style="display:none;margin-top:20px;padding:20px;background:var(--tiffany-bg);border:1px solid var(--tiffany-mid);border-radius:6px;">
-          <div style="font-weight:700;color:var(--tiffany);margin-bottom:6px;">Message Sent</div>
-          <div style="font-size:13px;color:var(--mid);">Thanks for reaching out. Tim or a member of the PreOne team will be in touch within 2 business days.</div>
+          <div class="num-point">
+            <div class="num-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="num-point-body"><h3>Food-Grade rPP from 2026</h3><p>Food-grade recycled polypropylene produced from kerbside-collected household PP containers — including Chobani tubs — hot washed, purified, IML de-labelled and colour sorted. FDA certified (LNO).</p></div>
+          </div>
+          <div class="num-point">
+            <div class="num-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="num-point-body"><h3>Re.Group — Strategic Partner</h3><p>Australia's largest waste management organisation secures national feedstock supply through their MRF network across Australia and New Zealand.</p></div>
+          </div>
         </div>
       </div>
-
-      <!-- Contact info -->
-      <div>
-        <div class="section-eyebrow reveal">Direct Contact</div>
-        <h2 class="section-h2 reveal reveal-d1" style="margin-bottom:28px;">Talk to<br>Tim Welsh</h2>
-
-        <!-- Tim card -->
-        <div style="background:var(--bg);border:1px solid var(--light-grey);border-radius:8px;padding:24px;margin-bottom:24px;" class="reveal reveal-d2">
-          <div style="display:flex;gap:16px;align-items:center;margin-bottom:18px;">
-            <div style="width:56px;height:56px;border-radius:50%;background:var(--tiffany);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--white);flex-shrink:0;">TW</div>
+      <div class="reveal reveal-d1">
+        <!-- Actual facility photo in a panel -->
+        <div style="border-radius:8px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.12);">
+          <img src="assets/photo-facility.jpg" alt="SA Purification Hub under construction" style="width:100%;height:320px;object-fit:cover;display:block;">
+          <div style="background:var(--tiffany);padding:16px 20px;display:flex;align-items:center;gap:12px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6z"/></svg>
             <div>
-              <div style="font-size:17px;font-weight:800;color:var(--near-black);">Tim Welsh</div>
-              <div style="font-size:13px;color:var(--tiffany);font-weight:600;">CEO, PreOne Global</div>
-              <div style="font-size:12px;color:var(--steel);margin-top:2px;">Melbourne, Victoria, Australia</div>
+              <div style="font-size:12px;font-weight:700;color:var(--white);">"New $40m soft plastics recycling plant underway"</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.7);">Packaging News · July 2024</div>
             </div>
           </div>
-          <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid var(--light-grey);">
-            <a href="mailto:t.welsh@preoneglobal.com" style="display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mid);text-decoration:none;" onmouseover="this.style.color='#00A19B'" onmouseout="this.style.color='#3d4852'">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              t.welsh@preoneglobal.com
-            </a>
-            <a href="https://www.linkedin.com/company/preone-australia" target="_blank" style="display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mid);text-decoration:none;" onmouseover="this.style.color='#00A19B'" onmouseout="this.style.color='#3d4852'">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              linkedin.com/company/preone-australia
-            </a>
-          </div>
-        </div>
-
-        <!-- Partnership types -->
-        <div class="reveal reveal-d2">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:14px;">Partnership Enquiries Welcome From</div>
-          <div style="display:flex;flex-direction:column;gap:1px;background:var(--light-grey);">
-            <div style="background:var(--white);padding:13px 18px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:var(--dark);">MRF &amp; Waste Operators</span><span style="font-size:11px;color:var(--tiffany);font-weight:700;">Feedstock Supply</span></div>
-            <div style="background:var(--white);padding:13px 18px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:var(--dark);">Packaging Manufacturers</span><span style="font-size:11px;color:var(--tiffany);font-weight:700;">ASP Resin Supply</span></div>
-            <div style="background:var(--white);padding:13px 18px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:var(--dark);">Brand Owners &amp; Retailers</span><span style="font-size:11px;color:var(--tiffany);font-weight:700;">Packaging Solutions + Equity</span></div>
-            <div style="background:var(--white);padding:13px 18px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;font-weight:600;color:var(--dark);">Capital &amp; Investment Partners</span><span style="font-size:11px;color:var(--tiffany);font-weight:700;">Hub Co-Investment</span></div>
-          </div>
-        </div>
-
-        <!-- News -->
-        <div style="margin-top:24px;padding:18px 20px;background:var(--tiffany-bg);border:1px solid var(--tiffany-mid);border-radius:6px;" class="reveal reveal-d3">
-          <div style="font-size:10px;font-weight:700;color:var(--tiffany);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">In The News</div>
-          <div style="font-size:13px;color:var(--dark);font-weight:600;margin-bottom:4px;">"New $40m soft plastics recycling plant underway"</div>
-          <div style="font-size:11px;color:var(--steel);">Packaging News · July 2024</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- WHAT WE PRODUCE -->
+<section class="bg-light" id="products">
+  <div class="container">
+    <div class="section-eyebrow reveal">What We Produce</div>
+    <h2 class="section-h2 reveal reveal-d1">Australian Resin<br>Output Mix</h2>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">The SA Hub produces a diversified range of recycled polymer resins from kerbside-collected and commercially-recovered plastic streams.</p>
+    <div class="card-grid-2 reveal reveal-d1" style="margin-bottom:40px;">
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg></div>
+        <h3>Food &amp; Consumer Grade Rigids</h3>
+        <ul class="check-list" style="margin-bottom:16px;">
+          <li><strong style="color:var(--dark);">rPP</strong> — food-grade, from kerbside PP containers incl. Chobani tubs. Priority output #1</li>
+          <li><strong style="color:var(--dark);">rHDPE</strong> — consumer and industrial grades</li>
+          <li><strong style="color:var(--dark);">PET flakes</strong> — bottle and tray applications</li>
+        </ul>
+        <div style="padding:12px 16px;background:var(--tiffany-bg);border-left:2px solid var(--tiffany);border-radius:0 4px 4px 0;">
+          <p style="font-size:12px;color:var(--mid);line-height:1.65;">Hot washed, purified, IML de-labelled, colour sorted. FDA food grade certified (LNO). Eco Modulation ready.</p>
+        </div>
+      </div>
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <h3>Non-Food Contact Films</h3>
+        <ul class="check-list" style="margin-bottom:16px;">
+          <li><strong style="color:var(--dark);">rLDPE</strong> — flexible packaging and film applications</li>
+          <li><strong style="color:var(--dark);">rLLDPE</strong> — stretch film and agricultural applications</li>
+        </ul>
+        <div style="padding:12px 16px;background:var(--tiffany-bg);border-left:2px solid var(--tiffany);border-radius:0 4px 4px 0;">
+          <p style="font-size:12px;color:var(--mid);line-height:1.65;">Soft plastics from kerbside and retail drop-off processed through HydroDyn® — removing all contaminants for clean film-grade flake compounding.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accent-card reveal">
+      <h3>Brand Owner Example: Chobani × PreOne × MPAK — 2026</h3>
+      <p style="margin-top:10px;">In 2026, Chobani yoghurt tubs collected from kerbside PP programs feed directly into the PreOne SA Hub. rPP is compounded into Application Specific Polymers for thin-wall injection food containers — closing the loop on Chobani's own packaging. Hot washed, purified, IML de-labelled, colour sorted, FDA certified.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT MODEL -->
+<section class="bg-white" id="investment">
+  <div class="container">
+    <div class="section-eyebrow reveal">Investment &amp; Partnership</div>
+    <h2 class="section-h2 reveal reveal-d1">Co-Investment in<br>Purification Hubs</h2>
+    <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:48px;">PreOne develops Joint Venture Purification Hubs — offering equity co-investment to brand owners, retailers and strategic partners. Pricing is structurally decoupled from the Ethylene and Propylene gas markets, delivering predictable, consistent pricing over long-term supply agreements.</p>
+
+    <!-- Pricing advantage -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-grey);margin-bottom:48px;" class="reveal reveal-d1">
+      <div style="background:var(--bg);padding:28px 32px;">
+        <div style="font-size:10px;font-weight:700;color:var(--steel);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;">Virgin Resin</div>
+        <div style="font-size:20px;font-weight:800;color:var(--dark);margin-bottom:8px;">Gas Market Exposed ↑↓</div>
+        <p style="font-size:13px;color:var(--mid);line-height:1.65;">Tracks Ethylene and Propylene spot prices — volatile, geopolitically exposed, trending upward. Difficult to lock in pricing certainty.</p>
+      </div>
+      <div style="background:var(--tiffany-bg);border:1px solid var(--tiffany-mid);padding:28px 32px;">
+        <div style="font-size:10px;font-weight:700;color:var(--tiffany);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;">PreOne ASP Resins</div>
+        <div style="font-size:20px;font-weight:800;color:var(--near-black);margin-bottom:8px;">Stable &amp; Predictable →</div>
+        <p style="font-size:13px;color:var(--mid);line-height:1.65;">Priced on recovery and processing economics — independent of petrochemical markets. Long-term supply agreements with price certainty built in.</p>
+      </div>
+    </div>
+
+    <div class="card-grid-3 reveal reveal-d1" style="margin-bottom:48px;">
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Joint Venture Structure</h3>
+        <p>PreOne brings technology, operational expertise and supply chain integration. Partners bring co-investment capital and offtake commitment. Equity, profit share and governance rights commensurate with stake.</p>
+        <ul class="check-list" style="margin-top:14px;"><li>Equity participation in hub development</li><li>Long-term profit participation</li><li>Supply priority rights</li></ul>
+      </div>
+      <div class="light-card" style="border-color:var(--tiffany);">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Customised Resin IP</h3>
+        <p>Application Specific Polymer formulations developed as co-owned intellectual property — tailored to your packaging application and registered to your specifications.</p>
+        <ul class="check-list" style="margin-top:14px;"><li>Co-ownership of ASP formulation IP</li><li>Exclusive supply for your application</li><li>Continuous R&amp;D improvement</li></ul>
+      </div>
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+        <h3>Long-Term Offtake</h3>
+        <p>Structured multi-year offtake agreements providing price certainty and supply priority for the duration of the hub operating life. Annual volumes contracted in advance.</p>
+        <ul class="check-list" style="margin-top:14px;"><li>Multi-year price certainty</li><li>Volume commitment &amp; priority</li><li>Certification and traceability included</li></ul>
+      </div>
+    </div>
+
+    <!-- Partner benefits -->
+    <div style="display:flex;flex-direction:column;gap:1px;background:var(--light-grey);" class="reveal">
+      <div style="background:var(--bg);padding:28px 32px;display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start;">
+        <div><div style="font-size:10px;font-weight:700;color:var(--tiffany);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Brand Owners</div><div style="font-size:18px;font-weight:800;color:var(--near-black);line-height:1.2;">7 Reasons<br>to Partner</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;">
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">1</span>Stable pricing — decoupled from gas markets</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">2</span>Profit participation in hub developments</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">3</span>Diversified global offtake network</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">4</span>Technical competency for customised product specs</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">5</span>Reliable quality and service — FDA food grade certified</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">6</span>Global manufacturing and supply chain network</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">7</span>Environmentally sustainable — lowest carbon impact solution</div>
+        </div>
+      </div>
+      <div style="background:var(--white);padding:28px 32px;display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start;">
+        <div><div style="font-size:10px;font-weight:700;color:var(--tiffany);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Feedstock Partners</div><div style="font-size:18px;font-weight:800;color:var(--near-black);line-height:1.2;">Re.Group<br>Model</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;">
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">1</span>A culture of collaboration and mutual success</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">2</span>Share capabilities to boost your service offering</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">3</span>"Trojan Horse" to win more waste management contracts</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">4</span>Fast-track into recycling with reduced risk</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">5</span>Future-proofed — soft plastics ready</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">6</span>Access to the world's best recycling technology</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">7</span>Lead the market into high-value applications</div>
+          <div style="display:flex;gap:8px;font-size:13px;color:var(--mid);"><span style="color:var(--tiffany);font-weight:800;flex-shrink:0;">8</span>Industry best practice leadership</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5-YEAR PLAN -->
+<section class="bg-light" id="plan">
+  <div class="container">
+    <div class="section-eyebrow reveal">5-Year Growth Plan</div>
+    <h2 class="section-h2 reveal reveal-d1">Australia &amp; New Zealand<br>Footprint</h2>
+    <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:48px;">The hub and spoke model scales progressively — achieving large geographical coverage, distributing supply risk and minimising carbon footprint by transporting only clean, usable material.</p>
+    <div class="two-col-grid reveal reveal-d1" style="align-items:start;">
+      <div>
+        <div class="light-card" style="padding:28px;">
+          <div style="font-size:10px;font-weight:700;color:var(--tiffany);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;">Australia &amp; NZ Network</div>
+          <svg viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+            <path d="M 40 60 L 80 40 L 140 35 L 190 45 L 220 60 L 240 50 L 260 60 L 270 90 L 265 120 L 250 145 L 240 170 L 230 190 L 210 205 L 190 220 L 170 230 L 150 220 L 135 210 L 120 225 L 100 230 L 85 210 L 75 195 L 60 180 L 50 160 L 35 140 L 25 110 L 30 80 Z" stroke="#d0dce4" stroke-width="1.5" fill="#f0fafa"/>
+            <path d="M 170 240 L 185 238 L 192 250 L 185 262 L 168 260 L 160 250 Z" stroke="#d0dce4" stroke-width="1" fill="#f0fafa"/>
+            <path d="M 295 155 L 308 145 L 316 155 L 312 172 L 300 178 L 292 168 Z" stroke="#d0dce4" stroke-width="1" fill="#f0fafa"/>
+            <path d="M 300 184 L 310 180 L 318 190 L 314 205 L 302 210 L 294 200 Z" stroke="#d0dce4" stroke-width="1" fill="#f0fafa"/>
+            <circle cx="130" cy="175" r="10" fill="rgba(0,161,155,0.15)" stroke="#00A19B" stroke-width="2"/>
+            <circle cx="130" cy="175" r="4" fill="#00A19B"/>
+            <text x="144" y="170" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#00A19B">SA Hub #1</text>
+            <text x="144" y="180" font-family="Montserrat,sans-serif" font-size="7" fill="#6b7684">Adelaide · NOW</text>
+            <circle cx="55" cy="130" r="7" fill="rgba(0,161,155,0.08)" stroke="#00A19B" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="55" cy="130" r="3" fill="rgba(0,161,155,0.4)"/>
+            <circle cx="180" cy="200" r="7" fill="rgba(0,161,155,0.08)" stroke="#00A19B" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="180" cy="200" r="3" fill="rgba(0,161,155,0.4)"/>
+            <circle cx="210" cy="110" r="7" fill="rgba(0,161,155,0.08)" stroke="#00A19B" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="210" cy="110" r="3" fill="rgba(0,161,155,0.4)"/>
+            <circle cx="200" cy="155" r="7" fill="rgba(0,161,155,0.08)" stroke="#00A19B" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="200" cy="155" r="3" fill="rgba(0,161,155,0.4)"/>
+            <circle cx="305" cy="195" r="7" fill="rgba(0,0,0,0.04)" stroke="#aab" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <circle cx="305" cy="195" r="3" fill="rgba(0,0,0,0.15)"/>
+            <circle cx="20" cy="252" r="5" fill="#00A19B"/>
+            <text x="30" y="256" font-family="Montserrat,sans-serif" font-size="7.5" font-weight="700" fill="#1e2226">Hub (Active)</text>
+            <circle cx="20" cy="268" r="5" fill="rgba(0,161,155,0.1)" stroke="#00A19B" stroke-width="1.5" stroke-dasharray="2 1.5"/>
+            <text x="30" y="272" font-family="Montserrat,sans-serif" font-size="7.5" fill="#6b7684">Spoke / Planned Hub</text>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div class="timeline">
+          <div class="timeline-item active"><div class="timeline-dot"></div><div class="timeline-year">2023–2024</div><h4>SA Pre-Cleaning Spoke Established</h4><p>First Australian HydroDyn® installation. 8kt PET, Rigid PP &amp; HDPE processing in South Australia with Re.Group feedstock supply.</p></div>
+          <div class="timeline-item active"><div class="timeline-dot"></div><div class="timeline-year">2025–2026</div><h4>SA Purification Hub #1 — Production</h4><p>$80m investment. 12,000m² facility. 40kt annual capacity. Food-grade rPP priority output. National feedstock supply secured via Re.Group.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2026–2027</div><h4>Eastern Seaboard Expansion</h4><p>Pre-Cleaning Spokes in Victoria, New South Wales and Queensland. Progressive scale-up leveraging Re.Group's national MRF network.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2027–2028</div><h4>Second Purification Hub</h4><p>Eastern Australia hub. Expanded resin product range. Increased annual output and new partner offtake agreements.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2028+</div><h4>New Zealand &amp; Asia-Pacific</h4><p>NZ operations. Full ANZ footprint. PreOne ThermoSheet and expanded polymer grades across the Asia-Pacific region.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-inner">
+    <h2>Partner With Us</h2>
+    <p>Early-stage partners in the SA Purification Hub secure preferred equity terms, priority supply and co-development of Application Specific Polymer IP.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-white">Contact Us</a>
+      <a href="technology.html" class="btn-ghost-white">Our Technology</a>
+    </div>
+  </div>
+</div>
 <div id="footer-placeholder"></div>
 <script src="assets/chrome.js"></script>
-<script>function handleSubmit(e){e.preventDefault();document.querySelector('form').style.display='none';document.getElementById('form-success').style.display='block';}</script>
 </body>
 </html>

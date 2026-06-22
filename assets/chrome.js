@@ -1,7 +1,7 @@
 const NAV_HTML = `
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="assets/logo-white-clean.png" alt="PreOne">
+    <img src="assets/logo-black.png" alt="PreOne" style="height:30px;width:auto;">
   </a>
   <ul class="nav-links">
     <li><a href="solution.html">The Problem</a></li>
@@ -48,7 +48,7 @@ const FOOTER_HTML = `
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-legal">© 2026 PreOne Global. All rights reserved.</div>
+      <div class="footer-legal">© 2026 PreOne Australia Pty Ltd. All rights reserved.</div>
       <div class="footer-contact">Melbourne &amp; Adelaide, Australia &nbsp;·&nbsp; <a href="mailto:t.welsh@preoneglobal.com">t.welsh@preoneglobal.com</a></div>
     </div>
   </div>
@@ -57,4 +57,27 @@ const FOOTER_HTML = `
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('nav-placeholder').innerHTML = NAV_HTML;
   document.getElementById('footer-placeholder').innerHTML = FOOTER_HTML;
+
+  // Active nav
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === page) a.classList.add('active');
+  });
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Page dots
+  const dots = document.querySelectorAll('.page-dot');
+  const sections = Array.from(document.querySelectorAll('section[id],.page-hero[id]'));
+  function updateDots() {
+    let cur = 0;
+    sections.forEach((s,i) => { if (window.scrollY >= s.offsetTop - 180) cur = i; });
+    dots.forEach((d,i) => d.classList.toggle('active', i === cur));
+  }
+  dots.forEach((d,i) => d.addEventListener('click', () => sections[i]?.scrollIntoView({behavior:'smooth'})));
+  if (dots.length) { window.addEventListener('scroll', updateDots, {passive:true}); updateDots(); }
 });
