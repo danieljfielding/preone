@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Problem We Solve — PreOne</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
@@ -10,50 +9,36 @@
 <body>
 <div id="nav-placeholder"></div>
 <div class="page-dots">
-  <button class="page-dot" title="Overview"></button>
-  <button class="page-dot" title="The Problem"></button>
-  <button class="page-dot" title="The Solution"></button>
-  <button class="page-dot" title="Supply Chain"></button>
+  <button class="page-dot"></button><button class="page-dot"></button>
+  <button class="page-dot"></button><button class="page-dot"></button>
 </div>
 
-<!-- PAGE HERO -->
-<div class="page-hero page-hero-contained page-hero-grid" id="overview" style="border-right:3px solid var(--tiffany);">
-  <div class="page-hero-bg"></div>
+<!-- HERO — recycling photo -->
+<div class="page-hero" id="overview" style="background:var(--tiffany);">
+  <div class="page-hero-photo" style="background-image:url('assets/photo-recycling.jpg');"></div>
   <div class="container page-hero-inner">
     <div class="page-hero-tag">The Problem We Solve</div>
-    <h1 class="page-h1">The Linear Economy<br>is <em>Failing Plastic</em></h1>
+    <h1 class="page-h1">The Linear Economy<br>is Failing Plastic</h1>
     <p class="page-sub">More than 90% of all plastic produced ends up polluting the planet. PreOne exists to fix the broken link between the world of waste and the world of polymers.</p>
+    <div class="page-hero-actions">
+      <a href="technology.html" class="btn-white">Our Technology</a>
+      <a href="who-we-serve.html" class="btn-ghost-white">Who We Serve →</a>
+    </div>
   </div>
 </div>
-<div class="hero-separator"></div>
-<div class="page-divider"></div>
 
-<!-- THE SCALE OF THE PROBLEM -->
-<section style="background:var(--charcoal);" id="problem">
+<!-- STATS -->
+<section class="bg-white" id="problem">
   <div class="container">
     <div class="section-eyebrow reveal">The Scale</div>
     <h2 class="section-h2 reveal reveal-d1">A Crisis in Numbers</h2>
-    <p class="section-sub reveal reveal-d2" style="margin-bottom:56px;">Plastics pollution is one of the biggest environmental threats facing the world — and it's accelerating without major intervention.</p>
-
-    <div class="stat-grid-4 reveal reveal-d1" style="margin-bottom:56px;">
-      <div class="stat-tile">
-        <div class="stat-tile-val">91%</div>
-        <div class="stat-tile-lbl">Of soft plastics are buried, burnt or washed away — never recycled</div>
-      </div>
-      <div class="stat-tile">
-        <div class="stat-tile-val">14M</div>
-        <div class="stat-tile-lbl">Tonnes of plastic enter the ocean every single year</div>
-      </div>
-      <div class="stat-tile">
-        <div class="stat-tile-val">2×</div>
-        <div class="stat-tile-lbl">Worldwide plastic production is set to double by 2040 without intervention</div>
-      </div>
-      <div class="stat-tile">
-        <div class="stat-tile-val">850M</div>
-        <div class="stat-tile-lbl">Metric tonnes of greenhouse gases from plastic processing in 2019 alone</div>
-      </div>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">Plastics pollution is one of the biggest environmental threats facing the world — and it's accelerating without major intervention.</p>
+    <div class="stat-grid-4 reveal reveal-d1" style="margin-bottom:48px;">
+      <div class="stat-tile"><div class="stat-tile-val">91%</div><div class="stat-tile-lbl">Of soft plastics buried, burnt or washed away — never recycled</div></div>
+      <div class="stat-tile"><div class="stat-tile-val">14M</div><div class="stat-tile-lbl">Tonnes of plastic enter the ocean every single year</div></div>
+      <div class="stat-tile"><div class="stat-tile-val">2×</div><div class="stat-tile-lbl">Worldwide plastic production set to double by 2040</div></div>
+      <div class="stat-tile"><div class="stat-tile-val">850M</div><div class="stat-tile-lbl">Metric tonnes of greenhouse gases from plastic processing in 2019</div></div>
     </div>
-
     <div class="accent-card reveal">
       <h3>"Plastics Pollution is one of the biggest environmental threats facing the world"</h3>
       <p style="margin-top:10px;">By 2050, emissions from plastic processing are projected to reach 2.8 billion tonnes — unless the industry fundamentally transforms how waste plastic is recovered, purified and reused.</p>
@@ -61,8 +46,8 @@
   </div>
 </section>
 
-<!-- WHY THE LINEAR ECONOMY FAILS -->
-<section style="background:var(--onix);" id="linear">
+<!-- THREE BARRIERS -->
+<section class="bg-light" id="linear">
   <div class="container">
     <div class="two-col-grid-center">
       <div>
@@ -74,7 +59,7 @@
         <div class="num-point">
           <div class="num-badge">1</div>
           <div class="num-point-body">
-            <h3>No Coordination Between Waste & Polymers</h3>
+            <h3>No Coordination Between Waste &amp; Polymers</h3>
             <p>Limited expertise and coordination between the world of waste and the world of polymers creates circularity barriers that no single player can overcome. MRFs, converters and brand owners each operate in isolation.</p>
           </div>
         </div>
@@ -82,7 +67,7 @@
           <div class="num-badge">2</div>
           <div class="num-point-body">
             <h3>Virgin Resin Dominates Economics</h3>
-            <p>More than 90% of all plastic produced is polluting the planet and accelerating global warming. Limited economic equity for circular participants means there's no financial incentive to close the loop.</p>
+            <p>More than 90% of all plastic produced is polluting the planet. Limited economic equity for circular participants means there is no financial incentive to close the loop.</p>
           </div>
         </div>
         <div class="num-point">
@@ -98,25 +83,24 @@
 </section>
 
 <!-- THE SOLUTION -->
-<section style="background:var(--charcoal);" id="solution">
+<section class="bg-white" id="solution">
   <div class="container">
     <div class="section-eyebrow reveal">PreOne's Answer</div>
     <h2 class="section-h2 reveal reveal-d1">We Make It Circular</h2>
-    <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:56px;">PreOne solves the global plastics waste problem by creating a circular economy where value is created for all participants — from material recovery organisations through to consumers.</p>
-
-    <div class="card-grid-3 reveal reveal-d1" style="margin-bottom:56px;">
-      <div class="dark-card">
-        <div class="card-icon" style="font-size:24px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14M14.12 2.29a10 10 0 0 1 0 19.42M9.88 2.29a10 10 0 0 0 0 19.42"/></svg></div>
+    <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:48px;">PreOne solves the global plastics waste problem by creating a circular economy where value is created for all participants — from material recovery organisations through to consumers.</p>
+    <div class="card-grid-3 reveal reveal-d1" style="margin-bottom:48px;">
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14M14.12 2.29a10 10 0 0 1 0 19.42M9.88 2.29a10 10 0 0 0 0 19.42"/></svg></div>
         <h3>World-Leading Technology</h3>
         <p>We deploy the HydroDyn® advanced mechanical recycling system — purifying plastics to 100 parts per million at 90m² per second. No other traditional washing system achieves this level of purification.</p>
       </div>
-      <div class="dark-card">
-        <div class="card-icon" style="font-size:24px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
         <h3>End-to-End Coordination</h3>
         <p>We bridge the world of waste to the world of polymers and influence circular participation through equitable partnerships — securing feedstock, producing resin, and delivering to converters and brand owners.</p>
       </div>
-      <div class="dark-card">
-        <div class="card-icon" style="font-size:24px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+      <div class="light-card">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></div>
         <h3>Application Specific Polymers</h3>
         <p>Our collaborative business model produces sustainable remanufactured resins and packaging for the global market. We engineer the polymer to meet converter, brand owner and consumer needs — all in one pellet.</p>
       </div>
@@ -125,49 +109,23 @@
 </section>
 
 <!-- SUPPLY CHAIN -->
-<section style="background:var(--onix);" id="supplychain">
+<section class="bg-light" id="supplychain">
   <div class="container">
     <div class="section-eyebrow reveal">Supply Chain</div>
     <h2 class="section-h2 reveal reveal-d1">PreOne Coordinates<br>End-to-End</h2>
     <p class="section-sub section-sub-wide reveal reveal-d2" style="margin-bottom:16px;">Our model creates specific benefits at every node in the supply chain — eliminating waste, adding value and enabling circularity at scale.</p>
-
-    <div class="process-strip process-strip-6 reveal" style="margin-top:64px;">
+    <div class="process-strip process-strip-6 reveal" style="margin-top:56px;">
       <div class="process-connector"></div>
-      <div class="process-step">
-        <div class="process-num">1</div>
-        <div class="process-step-title">MRF Spokes</div>
-        <div class="process-step-desc">HydroCleaner converts waste into pre-washed flakes. Eliminates waste transport. Adds value at gate.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">2</div>
-        <div class="process-step-title">Purification Hubs</div>
-        <div class="process-step-desc">JV hubs turn flakes into virgin-replacement ASP resins. Co-investment. Customised IP.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">3</div>
-        <div class="process-step-title">Converters</div>
-        <div class="process-step-desc">Single-pack solution. Optimised for every application. Technical support included.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">4</div>
-        <div class="process-step-title">Brand Owners</div>
-        <div class="process-step-desc">Packaging targets met. Certification. Equity in hub developments. Price certainty.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">5</div>
-        <div class="process-step-title">Retailers</div>
-        <div class="process-step-desc">Packaging design. Traceability. Supply priority. Community responsibility credentials.</div>
-      </div>
-      <div class="process-step">
-        <div class="process-num">6</div>
-        <div class="process-step-title">Consumers</div>
-        <div class="process-step-desc">Functional products. Consistency. Transparency. Engagement in recovery.</div>
-      </div>
+      <div class="process-step"><div class="process-num">1</div><div class="process-step-title">MRF Spokes</div><div class="process-step-desc">HydroCleaner converts waste into pre-washed flakes. Eliminates waste transport.</div></div>
+      <div class="process-step"><div class="process-num">2</div><div class="process-step-title">Purification Hubs</div><div class="process-step-desc">JV hubs turn flakes into virgin-replacement ASP resins. Co-investment opportunities.</div></div>
+      <div class="process-step"><div class="process-num">3</div><div class="process-step-title">Converters</div><div class="process-step-desc">Single-pack solution. Optimised for every application. Technical support included.</div></div>
+      <div class="process-step"><div class="process-num">4</div><div class="process-step-title">Brand Owners</div><div class="process-step-desc">Packaging targets met. Certification. Equity in hub developments. Price certainty.</div></div>
+      <div class="process-step"><div class="process-num">5</div><div class="process-step-title">Retailers</div><div class="process-step-desc">Packaging design. Traceability. Supply priority. Community responsibility credentials.</div></div>
+      <div class="process-step"><div class="process-num">6</div><div class="process-step-title">Consumers</div><div class="process-step-desc">Functional products. Consistency. Transparency. Engagement in recovery.</div></div>
     </div>
-
-    <div style="text-align:center;margin-top:48px;" class="reveal">
-      <a href="technology.html" class="btn-primary" style="margin-right:16px;">Explore Our Technology</a>
-      <a href="who-we-serve.html" class="btn-outline-tiffany">Who We Serve</a>
+    <div style="text-align:center;margin-top:44px;" class="reveal">
+      <a href="technology.html" class="btn-primary" style="margin-right:14px;">Explore Our Technology</a>
+      <a href="who-we-serve.html" class="btn-outline">Who We Serve</a>
     </div>
   </div>
 </section>
@@ -177,14 +135,12 @@
     <h2>Be Part of the Solution</h2>
     <p>PreOne is building a circular plastic economy for Australia — and we need the right partners at every stage of the supply chain.</p>
     <div class="cta-actions">
-      <a href="contact.html" class="btn-dark">Get In Touch</a>
-      <a href="who-we-serve.html" class="btn-outline-dark">Find Your Role</a>
+      <a href="contact.html" class="btn-white">Partner With Us</a>
+      <a href="who-we-serve.html" class="btn-ghost-white">Find Your Role</a>
     </div>
   </div>
 </div>
-
 <div id="footer-placeholder"></div>
 <script src="assets/chrome.js"></script>
-<script src="assets/nav.js"></script>
 </body>
 </html>
