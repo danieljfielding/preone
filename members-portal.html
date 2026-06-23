@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Members Portal — PreOne</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .portal-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; background: var(--light-grey); margin-bottom: 48px; }
+  .portal-tile { background: var(--white); padding: 28px 24px; }
+  .portal-tile:hover { background: var(--tiffany-bg); }
+  .portal-tile-icon { width: 42px; height: 42px; border-radius: 8px; background: var(--tiffany-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .portal-tile h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--near-black); }
+  .portal-tile p { font-size: 13px; color: var(--mid); line-height: 1.6; }
+  .portal-tile .tile-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--tiffany); margin-top: 12px; }
+  .login-box { background: var(--near-black); border-radius: 12px; padding: 40px; color: white; }
+  .login-box label { color: rgba(255,255,255,0.7); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; }
+  .login-box input { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; border-radius: 6px; padding: 12px 16px; font-size: 14px; width: 100%; margin-top: 6px; margin-bottom: 16px; font-family: inherit; }
+  .login-box input::placeholder { color: rgba(255,255,255,0.3); }
+  .login-box input:focus { outline: none; border-color: var(--tiffany); }
+  .tier-badge { display: inline-block; padding: 3px 10px; border-radius: 99px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .tier-standard { background: var(--light-grey); color: var(--mid); }
+  .tier-partner { background: var(--tiffany-bg); color: var(--tiffany); border: 1px solid var(--tiffany-mid); }
+  .tier-jv { background: var(--near-black); color: var(--white); }
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- HERO with dark sophisticated treatment -->
+<div class="page-hero" id="hero" style="background:var(--near-black);">
+  <div class="page-hero-bg" style="background-image:url('assets/photo-pellets.jpg');opacity:0.15;"></div>
+  <div class="container page-hero-inner">
+    <div class="page-hero-tag">Members Portal · PreOne Global</div>
+    <h1 class="page-h1">Your PreOne<br>Partner Hub</h1>
+    <p class="page-sub">Access technical documentation, batch reports, order management, pricing schedules and exclusive partner resources — all in one place.</p>
+    <div class="page-actions">
+      <a href="#login" class="btn-white">Sign In to Portal</a>
+      <a href="contact.html" class="btn-ghost-white">Request Access →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Portal overview: what members get -->
+<section id="overview">
+  <div class="container">
+    <div class="eyebrow reveal">Portal Features</div>
+    <h2 class="h2 reveal reveal-d1">Everything Your Team<br>Needs, In One Place</h2>
+    <p class="body-text reveal reveal-d2" style="max-width:560px;margin-bottom:40px;">The PreOne Members Portal gives supply chain partners secure access to the tools, data and documentation they need to work with our polymers efficiently.</p>
+
+    <div class="portal-grid reveal reveal-d1">
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h3>Technical Data Sheets</h3>
+        <p>Full library of TDS documents for all ASP grades. Melt flow, mechanical, thermal, FDA and certification documents.</p>
+        <div class="tile-tag">All tiers</div>
+      </div>
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Batch Certificates</h3>
+        <p>Certificates of analysis for every batch supplied. Download CoA, Chain of Custody and recycled content certificates by PO number.</p>
+        <div class="tile-tag">All tiers</div>
+      </div>
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+        <h3>Order Tracking</h3>
+        <p>Real-time order status, delivery tracking and inventory scheduling. View confirmed orders, despatch notices and invoices.</p>
+        <div class="tile-tag">All tiers</div>
+      </div>
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Pricing &amp; Forecasts</h3>
+        <p>Current pricing schedules, forward price guidance and quarterly resin cost forecasts. Includes ASP-specific and market reference pricing.</p>
+        <div class="tile-tag">Partner &amp; JV</div>
+      </div>
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Technical Support Tickets</h3>
+        <p>Raise and track technical support requests. Connect directly with PreOne's polymer chemists for processing and application support.</p>
+        <div class="tile-tag">All tiers</div>
+      </div>
+      <div class="portal-tile">
+        <div class="portal-tile-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A19B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <h3>JV Partner Dashboard</h3>
+        <p>For Joint Venture partners: production reporting, feedstock volumes, yield data, resin output schedules and financial distributions.</p>
+        <div class="tile-tag">JV Partners only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Membership tiers -->
+<section class="section-bg-light" id="tiers">
+  <div class="container">
+    <div class="eyebrow reveal">Membership Tiers</div>
+    <h2 class="h2 reveal reveal-d1">Access Levels</h2>
+    <p class="body-text reveal reveal-d2" style="max-width:520px;margin-bottom:40px;">Portal access is issued based on your commercial relationship with PreOne. Contact us to request your access level.</p>
+    <div class="three-col reveal reveal-d1">
+      <div class="card">
+        <span class="tier-badge tier-standard" style="margin-bottom:14px;display:inline-block;">Standard</span>
+        <h3>Supply Partner</h3>
+        <p style="margin-bottom:16px;">For MRF operators and feedstock suppliers. Access batch certificates, feedstock delivery reports and compliance documentation.</p>
+        <ul class="check-list">
+          <li>Feedstock delivery reports</li>
+          <li>Batch certificates</li>
+          <li>Technical data sheets</li>
+          <li>Support ticket access</li>
+        </ul>
+      </div>
+      <div class="card" style="border-color:var(--tiffany);position:relative;">
+        <div style="position:absolute;top:-1px;right:16px;background:var(--tiffany);color:white;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:0 0 6px 6px;">Most Common</div>
+        <span class="tier-badge tier-partner" style="margin-bottom:14px;display:inline-block;">Partner</span>
+        <h3>Commercial Partner</h3>
+        <p style="margin-bottom:16px;">For packaging manufacturers and brand owners. Full documentation library, pricing schedules and order management.</p>
+        <ul class="check-list">
+          <li>Everything in Standard</li>
+          <li>Pricing &amp; forward schedules</li>
+          <li>Order tracking &amp; invoices</li>
+          <li>Full TDS library</li>
+          <li>ASP formulation notes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tier-badge tier-jv" style="margin-bottom:14px;display:inline-block;">JV Partner</span>
+        <h3>Joint Venture Partner</h3>
+        <p style="margin-bottom:16px;">For co-investment partners in PreOne Purification Hubs. Full operational transparency plus financial reporting.</p>
+        <ul class="check-list">
+          <li>Everything in Partner</li>
+          <li>Production reporting</li>
+          <li>Feedstock &amp; yield data</li>
+          <li>JV financial distributions</li>
+          <li>Board reporting pack</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Login / access request -->
+<section id="login">
+  <div class="container">
+    <div class="two-col-start">
+      <div>
+        <div class="eyebrow reveal">Portal Sign In</div>
+        <h2 class="h2 reveal reveal-d1" style="margin-bottom:8px;">Access Your<br>Account</h2>
+        <p class="body-text reveal reveal-d2" style="margin-bottom:32px;">Sign in with your PreOne Portal credentials. If you don't have an account yet, contact us to request access.</p>
+        <div class="login-box reveal reveal-d2">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@company.com.au">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••••">
+          <button class="btn-primary" style="width:100%;padding:13px;margin-top:4px;" onclick="this.textContent='Signing in...';setTimeout(()=>{this.closest('.login-box').innerHTML='<div style=\'text-align:center;padding:20px 0;\'><div style=\'font-size:32px;margin-bottom:12px;\'>🔒</div><div style=\'font-size:16px;font-weight:700;color:white;margin-bottom:8px;\'>Portal Coming Soon</div><p style=\'color:rgba(255,255,255,0.65);font-size:13px;\'>The Members Portal is launching in Q3 2026. Contact us to register your interest.</p><a href=\'contact.html\' class=\'btn-white\' style=\'margin-top:16px;display:inline-block;\'>Request Early Access</a></div>'},1200);">Sign In</button>
+          <p style="font-size:11px;color:rgba(255,255,255,0.4);text-align:center;margin-top:12px;"><a href="contact.html" style="color:rgba(0,161,155,0.8);">Request portal access</a> · <a href="contact.html" style="color:rgba(0,161,155,0.8);">Forgot password?</a></p>
+        </div>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="accent-box" style="margin-bottom:20px;">
+          <div style="font-size:10px;font-weight:700;color:var(--tiffany);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;">Portal Launch — Q3 2026</div>
+          <h3 style="margin-bottom:8px;">Coming with SA Hub Production</h3>
+          <p>The Members Portal launches alongside the South Australian Purification Hub in 2026 — giving commercial partners real-time access to batch data, production schedules and documentation from day one.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--light-grey);border-radius:10px;padding:22px;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:14px;">Register Early Interest</div>
+          <div class="form-group"><label>Name &amp; Company</label><input type="text" placeholder="Your name / organisation"></div>
+          <div class="form-group"><label>Role</label>
+            <select>
+              <option value="">Select...</option>
+              <option>Packaging Manufacturer</option>
+              <option>Brand Owner / Retailer</option>
+              <option>MRF / Waste Operator</option>
+              <option>Investor / Capital Partner</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@company.com.au"></div>
+          <button class="btn-primary" style="width:100%;padding:12px;" onclick="this.textContent='Registered ✓';this.style.background='#009990';">Register Interest</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-inner">
+    <h2>Need Portal Access?</h2>
+    <p>Contact the PreOne team to request credentials for the Members Portal. Access is available to current and prospective supply chain partners.</p>
+    <div class="cta-actions"><a href="contact.html" class="btn-white">Request Access</a><a href="technical-support.html" class="btn-ghost-white">Technical Support</a></div>
+  </div>
+</div>
+<div id="footer-placeholder"></div>
+<script src="assets/chrome.js"></script>
+</body>
+</html>

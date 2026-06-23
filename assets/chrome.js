@@ -2,7 +2,7 @@ const NAV_HTML = `
 <nav>
   <div class="nav-topbar">
     <span>In Australia call <strong>1800 PREONE</strong></span>
-    <span>t.welsh@preoneglobal.com</span>
+    <span>contact@preoneglobal.com</span>
   </div>
   <div class="nav-main">
     <a href="index.html" class="nav-logo">
@@ -12,7 +12,9 @@ const NAV_HTML = `
       <li><a href="packaging-solutions.html">Packaging Solutions</a></li>
       <li><a href="sustainable-polymers.html">Sustainable Polymers</a></li>
       <li><a href="feedstock.html">Feedstock</a></li>
-      <li><a href="facilities.html">Our Facilities</a></li>
+      <li><a href="investors.html">Investors</a></li>
+      <li><a href="technical-support.html">Technical Support</a></li>
+      <li><a href="members-portal.html">Members Portal</a></li>
       <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
     </ul>
   </div>
@@ -43,16 +45,18 @@ const FOOTER_HTML = `
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="facilities.html">Our Facilities</a></li>
-            <li><a href="facilities.html#investment">Invest With Us</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="investors.html#investment">Invest With Us</a></li>
             <li><a href="contact.html">Partner With Us</a></li>
+            <li><a href="technical-support.html">Technical Support</a></li>
+            <li><a href="members-portal.html">Members Portal</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:1800773663">1800 PREONE</a></li>
-            <li><a href="mailto:t.welsh@preoneglobal.com">t.welsh@preoneglobal.com</a></li>
+            <li><a href="mailto:contact@preoneglobal.com">contact@preoneglobal.com</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
